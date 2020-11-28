@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.drawer.WearableDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".StoreActivity">
+
+    <TextView
+        android:id="@+id/tvStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="5dp"
+        android:text="@string/stores_name" />
+
+    <ImageView
+        android:id="@+id/bodega1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="showBodega1"
+        android:contentDescription="@string/bodega1_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProduct"
+        android:src="@drawable/bodega1" />
+
+    <ImageView
+        android:id="@+id/bodega2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:onClick="showBodega2"
+        android:contentDescription="@string/bodega2_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cafe"
+        android:src="@drawable/bodega2" />
+
+    <ImageView
+        android:id="@+id/bodega3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:onClick="showBodega3"
+        android:contentDescription="@string/bodega3_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leche"
+        android:src="@drawable/bodega3" />
+
+    <TextView
+        android:id="@+id/bodega1_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/bodega1_name"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leche"
+        app:layout_constraintTop_toTopOf="@+id/leche" />
+
+    <TextView
+        android:id="@+id/bodega2_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/bodega2_name"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leche"
+        app:layout_constraintTop_toTopOf="@+id/leche" />
+
+    <TextView
+        android:id="@+id/bodega3_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/bodega3_name"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pan"
+        app:layout_constraintTop_toTopOf="@+id/pan" />
+
+</androidx.wear.widget.drawer.WearableDrawerLayout>

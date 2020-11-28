@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.drawer.WearableDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".ProductActivity">
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="5dp"
+        android:text="@string/products_name"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/cafe"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProduct"
+        android:onClick="showCafeOrder"
+        android:src="@drawable/cafe" />
+
+    <ImageView
+        android:id="@+id/leche"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cafe"
+        android:onClick="showLecheOrder"
+        android:src="@drawable/leche" />
+
+    <ImageView
+        android:id="@+id/pan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leche"
+        android:onClick="showPanOrder"
+        android:src="@drawable/pan" />
+
+    <TextView
+        android:id="@+id/cafe_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/cafe_item"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leche"
+        app:layout_constraintTop_toTopOf="@+id/leche" />
+
+    <TextView
+        android:id="@+id/leche_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/leche_item"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leche"
+        app:layout_constraintTop_toTopOf="@+id/leche" />
+
+    <TextView
+        android:id="@+id/pan_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/pan_item"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pan"
+        app:layout_constraintTop_toTopOf="@+id/pan" />
+
+</androidx.wear.widget.drawer.WearableDrawerLayout>

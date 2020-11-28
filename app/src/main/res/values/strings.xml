@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bodeguin_wearable</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="general_product_name">Productos</string>
+    <string name="general_store_name">Tienda</string>
+    <string name="stores_name">Tiendas</string>
+    <string name="products_name">Productos</string>
+    <string name="pan_item">Pan</string>
+    <string name="leche_item">Leche</string>
+    <string name="cafe_item">Cafe</string>
+    <string name="bodega1_name">Bodega 1</string>
+    <string name="bodega2_name">Bodega 2</string>
+    <string name="bodega3_name">Bodega 3</string>
+</resources>
